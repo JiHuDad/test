@@ -17,6 +17,11 @@ class test:
                     print("%s/%s" % (path, filename))
 
 if __name__ == "__main__":
+    print len(sys.argv)
+    if len(sys.argv) <= 1:
+        print "Please input argument"
+        exit(1)
+
     test = test()
     path = sys.argv[1]
 
